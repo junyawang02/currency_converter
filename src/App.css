@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin:0;
+  margin-bottom: 1rem;
+}
+
+.input {
+  border-radius: .5em;
+  border: 2px solid rgb(26, 20, 41);
+  padding: .25rem;
+  width: 14em;
+}
+
+select {
+  border-radius: .5em;
+  border: 2px solid rgb(26, 20, 41);
+  padding: .25rem;
+  width: 15em;
+}
+
+.arrow {
+  font-weight: bold;
+  font-size: 4rem;
+}
