@@ -9,7 +9,7 @@ function App() {
   const [fromCurrency, setFromCurrency] = useState();
   const [toCurrency, setToCurrency] = useState();
   const [exchangeRate, setExchangeRate] = useState();
-  const [amount, setAmount] = useState(1);
+  const [amount, setAmount] = useState(money_round(1));
   const [amountInFC, setAmountInFC] = useState(true);
 
   function money_round(amount) {
@@ -46,7 +46,8 @@ function App() {
 
   return (
     <>
-      <h1>Currency Convertor</h1>
+    <div className = "wrapper">
+      <h1>Currency Converter</h1>
       <div name="cRow" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
         <div>
           <Chunk
@@ -67,6 +68,14 @@ function App() {
             onChangeAmount={e => { setAmount(e.target.value); setAmountInFC(false) }}
           />
         </div>
+      </div>
+    </div>
+    <div className="instructions">
+      <text>
+        This currency converter is made by Junya Wang using React. The github repository is at https://github.com/junyawang02/currency_converter/tree/main.
+        The exchange rates are pulled in real time from https://exchangeratesapi.io/.
+        To use, please select your desired currencies and/or change the amount. The amount will update accordingly.
+      </text>
       </div>
     </>
   );

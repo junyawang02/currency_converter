@@ -5,6 +5,8 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 h1 {
@@ -29,4 +31,17 @@ select {
 .arrow {
   font-weight: bold;
   font-size: 4rem;
+}
+
+.wrapper {
+  background-color: rgb(181, 255, 255);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+.instructions {
+  border:3px solid rgb(7, 75, 75);
+  margin: 20px;
+  padding: 10px;
+  width:75vh;
 }
